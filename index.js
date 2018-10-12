@@ -2,7 +2,7 @@
 
 const fs = require('fs'),
       stream = fs.createReadStream('english-words/words.txt', { encoding: 'utf8' }),
-      regexp = /^[abcdefghijlnopqrstuy0-9_ \-\.\u{0132}\u{0133}]+$/u;
+      regexp = /^[abcdefghijlnopqrstuy0-9_ \-\.\u{0132}\u{0133}]+$/ui;
 
 let words = [],
     remaining = '',
